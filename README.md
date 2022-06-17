@@ -59,38 +59,6 @@ Using [`scripts/run_all_mpiigaze_lenet.sh`](scripts/run_all_mpiigaze_lenet.sh) a
 you can run all training and evaluation for LeNet and ResNet-8 with
 default parameters.
 
-
-## Results
-
-### MPIIGaze
-
-| Model           | Mean Test Angle Error [degree] | Training Time |
-|:----------------|:------------------------------:|--------------:|
-| LeNet           |              6.52              |  3.5 s/epoch  |
-| ResNet-preact-8 |              5.73              |   7 s/epoch   |
-
-The training time is the value when using GTX 1080Ti.
-
-![](figures/mpiigaze/lenet.png)
-
-![](figures/mpiigaze/resnet_preact_8.png)
-
-### MPIIFaceGaze
-
-| Model     | Mean Test Angle Error [degree] | Training Time |
-|:----------|:------------------------------:|--------------:|
-| AlexNet   |              5.06              |  135 s/epoch  |
-| ResNet-14 |              4.83              |   62 s/epoch  |
-
-The training time is the value when using GTX 1080Ti.
-
-![](figures/mpiifacegaze/alexnet.png)
-
-![](figures/mpiifacegaze/resnet_simple.png)
-
-
-
-
 ### Demo
 
 This demo program runs gaze estimation on the video from a webcam.
