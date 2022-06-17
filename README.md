@@ -59,6 +59,10 @@ Using [`scripts/run_all_mpiigaze_lenet.sh`](scripts/run_all_mpiigaze_lenet.sh) a
 you can run all training and evaluation for LeNet and ResNet-8 with
 default parameters.
 
+### About network
+For MPIIGaze 2 neural networks can be found under /gaze_estimation/models/mpiigaze/ directory : lenet and resnet.
+Attention layer can be found in lenet_attn.py and resnet_attn.py
+
 ### Demo
 
 This demo program runs gaze estimation on the video from a webcam.
