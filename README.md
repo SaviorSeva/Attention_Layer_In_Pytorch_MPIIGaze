@@ -59,34 +59,10 @@ Using [`scripts/run_all_mpiigaze_lenet.sh`](scripts/run_all_mpiigaze_lenet.sh) a
 you can run all training and evaluation for LeNet and ResNet-8 with
 default parameters.
 
-### About network
-For MPIIGaze 2 neural networks can be found under /gaze_estimation/models/mpiigaze/ directory : lenet and resnet.
-Attention layer can be found in lenet_attn.py and resnet_attn.py
+### About attention layers
 
-### Demo
+The layers can be found in configs/mpiigaze.
 
-This demo program runs gaze estimation on the video from a webcam.
-
-1. Download the dlib pretrained model for landmark detection.
-
-    ```bash
-    bash scripts/download_dlib_model.sh
-    ```
-
-2. Calibrate the camera.
-
-    Save the calibration result in the same format as the sample
-    file [`data/calib/sample_params.yaml`](data/calib/sample_params.yaml).
-
-4. Run demo.
-
-    Specify the model path and the path of the camera calibration results
-    in the configuration file as in
-    [`configs/demo_mpiigaze_resnet.yaml`](configs/demo_mpiigaze_resnet.yaml).
-
-    ```bash
-    python demo.py --config configs/demo_mpiigaze_resnet.yaml
-    ```
 
 ## Related repos
 
