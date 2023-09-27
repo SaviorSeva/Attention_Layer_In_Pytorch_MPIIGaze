@@ -61,7 +61,7 @@ default parameters.
 
 ### About attention layers
 
-The layers can be found in configs/mpiigaze.
+The neuron network and the ones with attention layers can be found in models/mpiigaze repository.
 
 
 ## Related repos
